@@ -1,0 +1,171 @@
+
+body {
+    background: #f0f0f0;
+}
+
+footer {
+    border-top: 1px solid #c4c4c4;
+    background: #f5f5f5;
+}
+
+core-header-panel {
+    background: #f0f0f0;
+    /* height: 100% fails here on some browsers */
+    height: 100vh;
+    width: 100vw;
+}
+core-toolbar {
+  background-color: #03A9F4;
+}
+
+.center {
+    text-align: center;
+}
+
+#logo {
+    content: url("../images/devfest-2014_logo.png");
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+	padding: 5px 5px 5px 5px;
+}
+
+#gdg-icon {
+    height: 16px;
+    width: 16px;
+}
+
+#real-footer {
+    border-top: 1px solid #c4c4c4;
+}
+
+#sponsors-container {
+    text-align: center;
+}
+
+#organization-container {
+    text-align: center;
+}
+
+
+.thumbnail {
+    padding: 10px 20px 0px 20px;
+}
+
+.sponsor-gold {
+    max-width: 270px;
+}
+
+.sponsor-silver {
+    max-width: 220px;
+}
+
+
+.sponsor-bronze {
+    max-width: 170px;
+}
+
+img.logo {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+img.organization-logo {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+img.agencia-logo {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+img.colaborador-logo {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.thumbnail {
+    background-color: #f5f5f5;
+}
+.thumbnail .caption {
+    text-align: center;
+}
+
+
+.speaker {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/**
+ * speaker image
+ */
+.speaker-photo {
+    max-width: 84px;
+}
+
+
+.logo-devfest {
+    max-width: 350px;
+}
+
+#carousel-location {
+    max-width: 470px;
+    max-height: 400px;
+}
+
+
+img.carousel {
+    max-height: 350px;
+}
+
+
+table.agenda {
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    text-align: center;
+}
+
+col.horas {
+    width: 130px;
+}
+
+tr.bloque1 {
+    height: 30px;
+}
+
+tr.bloque2 {
+    height: 60px;
+}
+
+tr.bloque3 {
+    height: 90px;
+}
+
+
+
+.video {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/**
+ * video image
+ */
+.video-photo {
+    max-width: 140px;
+}
+
+.center-block {float: none !important}
+
+.thumbnail {
+    border-style: none;
+}

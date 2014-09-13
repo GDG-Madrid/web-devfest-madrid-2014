@@ -1,0 +1,50 @@
+<polymer-element 
+   name="devfest-sponsor" 
+   attributes="name url logo level">
+  <template>
+    
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/devfest.css">
+    
+    <div class="thumbnail sponsor-{{level}} center-block">
+      <paper-shadow z="{{shadowLevel()}}"></paper-shadow>
+      <a href="{{url}}" target="_blank">
+	<paper-ripple fit></paper-ripple>
+        <img class="logo"
+             src="{{logo}}"
+             alt="{{name}} Logo">
+      </a>
+      <div class="caption">
+        <a href="{{url}}" target="_blank"><b>{{name}}</b></a>
+      </div>
+    </div>
+
+  </template>
+
+  <script>
+    Polymer('devfest-sponsor', {
+    name: "",
+    url: "",
+    logo: "",
+    level: "",
+    shadowLevel: function() {
+        switch (this.level) {
+          case "gold":
+            return "3";
+            break;
+          case "silver":
+            return "2";
+            break;
+          case "bronze":
+            return "1";
+            break;
+          default:
+            return "1";
+        }
+      }
+    });
+  </script>
+
+</polymer-element>
+

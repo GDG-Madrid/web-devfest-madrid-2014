@@ -1,0 +1,68 @@
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <div class="navbar-brand">
+        <img id="gdg-icon" src="images/gdg_square.png" alt="GDG"/>
+        DevFest Madrid 2014
+      </div>
+      <button class="navbar-toggle" 
+	      type="button" 
+	      data-toggle="collapse" 
+	      data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#">      
+	    <paper-ripple fit></paper-ripple>
+	    <core-icon icon="home"></core-icon>
+	    Inicio
+	  </a>
+        </li>
+        <li>
+          <a href="#/speakers">
+	    <paper-ripple fit></paper-ripple>
+	    <core-icon icon="social:group"></core-icon>
+	    Ponentes
+	  </a>
+        </li>
+        <li>
+          <a href="#/agenda">
+	    <paper-ripple fit></paper-ripple>
+	    <core-icon icon="schedule"></core-icon>
+	    Agenda
+	  </a>
+        </li>
+        <li>
+          <a href="#/inscription">
+	    <paper-ripple fit></paper-ripple>
+	    <core-icon icon="editor:mode-edit"></core-icon>
+	    Inscripción
+	  </a>
+        </li>
+        <li>
+          <a href="/2013/">
+	    <paper-ripple fit></paper-ripple>
+	    <core-icon icon="folder"></core-icon>
+	    Anteriores DevFest Madrid
+	  </a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+
+
+<div id="logo">
+</div>
+
+<script>
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
+});
+</script>

@@ -1,0 +1,23 @@
+<polymer-element 
+   name="devfest-session" 
+   attributes="anchor speakerName speakerAnchor"
+   noscript>
+  <template>
+    
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/devfest.css">
+
+    <a name="{{anchor}}"></a>
+    <div class="panel panel-default">
+      <paper-shadow z="1"></paper-shadow>
+      <div class="panel-heading">
+	<h4><a href="#/speakers#{{speakerAnchor}}">{{speakerName}}</a></h4>
+      </div>
+      <div class="panel-body">
+	<content></content>
+      </div>
+    </div>
+  </template>
+</polymer-element>
+

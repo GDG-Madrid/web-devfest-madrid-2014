@@ -1,0 +1,37 @@
+<polymer-element 
+   name="devfest-speaker" 
+   attributes="name homeUrl imgSrc anchor"
+   noscript>
+  <template>
+    
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/devfest.css">
+
+    <a name="{{anchor}}"></a>
+    <li class="media speaker">
+      <a 
+	 class="pull-left" 
+	 target="_blank"
+	 href="{{homeUrl}}">
+    <img class="media-object speaker-photo"
+	 src="{{imgSrc}}"
+	 alt="{{name}}">
+    <paper-shadow z="1"></paper-shadow>
+      </img>
+      </a>
+      <div class="media-body">
+	<h4 class="media-heading">
+	  <a 
+	     class="pull-left" 
+	     target="_blank"
+	     href="{{homeUrl}}">
+	    {{name}}
+	  </a>
+	</h4>
+	<br/>
+	<content></content>
+      </div>
+    </li>
+  </template>
+</polymer-element>
