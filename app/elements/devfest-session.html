@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/devfest.css">
 
+    <style>
+      .agenda-info {
+          font-size: 14px;
+      }
+    </style>
+    
     <a name="{{anchor}}"></a>
     <div class="panel panel-default">
       <paper-shadow z="1"></paper-shadow>
       <div class="panel-heading">
-	<h4><a href="#/speakers#{{speakerAnchor}}">{{speakerName}}</a></h4>, {{day}} {{startTime}} - {{endTime}}
+	<h4><a href="#/speakers#{{speakerAnchor}}">{{speakerName}}</a>, <span class="agenda-info"> {{day}} {{startTime}} - {{endTime}}</span></h4>
       </div>
       <div class="panel-body">
 	<content></content>
