@@ -1,6 +1,6 @@
 <polymer-element 
    name="devfest-session" 
-   attributes="anchor speakerName speakerAnchor"
+   attributes="anchor speakerName speakerAnchor day startTime endTime"
    noscript>
   <template>
     
@@ -12,7 +12,7 @@
     <div class="panel panel-default">
       <paper-shadow z="1"></paper-shadow>
       <div class="panel-heading">
-	<h4><a href="#/speakers#{{speakerAnchor}}">{{speakerName}}</a></h4>
+	<h4><a href="#/speakers#{{speakerAnchor}}">{{speakerName}}</a></h4>, {{day}} {{startTime}} - {{endTime}}
       </div>
       <div class="panel-body">
 	<content></content>
