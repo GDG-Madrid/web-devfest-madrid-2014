@@ -43,6 +43,10 @@ core-toolbar {
     text-align: center;
 }
 
+#collaboration-container {
+    text-align: center;
+}
+
 #organization-container {
     text-align: center;
 }
