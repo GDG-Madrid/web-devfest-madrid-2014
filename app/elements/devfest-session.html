@@ -7,7 +7,8 @@
 	       speaker2Anchor
 	       day 
 	       startTime 
-	       endTime"
+	       endTime
+	       presentationLink"
    noscript>
   <template>
     
@@ -32,6 +33,9 @@
 	    y <a href="#/speakers#{{speaker2Anchor}}">{{speaker2Name}}</a>
 	  </template>,
 	  <span class="agenda-info"> {{day}} {{startTime}} - {{endTime}}</span>
+	  <template bind if="{{presentationLink}}">
+	    , <a href="{{presentationLink}}">presentación</a>
+	  </template>
 	</h4>
       </div>
       <div class="panel-body">
